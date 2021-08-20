@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+	*
+	{
+		margin:0;
+		padding: 0;
+	}
+
+	.mysection
+	{
+		height: 100vh;
+		background-color: rgba(187,104,184,0.829);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+	}
+
+	.mydiv
+	{
+		height: 200px;
+		width: 200px;
+		background: #ad5389; fallback for old browsers
+		border-radius: 150%;
+		position: absolute;
+		background: -webkit-linear-gradient(to right #3c1053,#ff13a1);
+		animation: trans .40s linear infinite;
+	}
+	.mydiv2
+	{
+		height: 100px;
+		width: 100px;
+		position: relative;
+		background: rgba(187,104,184,0.829);
+		border-radius: 150%;
+		animation: trans 40s
+		cubic-bezier(0.445,0.05,0.55,0.95)infinite
+	}
+
+	@keyframes trans{
+		from
+		{
+			transform: rotate(0deg);
+		}
+		to{
+			transform: rotate(360deg);
+		}
+	}
+
+	}
+	</style>
+</head>
+<body>
+	<section class="mysection">
+		<div class="mydiv" id="mydivid1"></div>
+		<div class="mydiv2" id="mydivid2"></div>
+		
+	</section>
+
+</body>
+</html>
